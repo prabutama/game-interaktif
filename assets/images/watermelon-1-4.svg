@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Semangka pecahan satu per empat</title>
+  <desc id="desc">Semangka bulat dibagi empat bagian sama besar dan satu bagian ditandai.</desc>
+  <circle cx="100" cy="100" r="84" fill="#46a44e"/>
+  <circle cx="100" cy="100" r="73" fill="#f15b6c"/>
+  <path d="M100 100 L100 27 A73 73 0 0 1 173 100 Z" fill="#ff97a3"/>
+  <line x1="100" y1="16" x2="100" y2="184" stroke="#2e6f38" stroke-width="4"/>
+  <line x1="16" y1="100" x2="184" y2="100" stroke="#2e6f38" stroke-width="4"/>
+  <circle cx="100" cy="58" r="4" fill="#2f2f2f"/>
+  <circle cx="58" cy="100" r="4" fill="#2f2f2f"/>
+  <circle cx="142" cy="100" r="4" fill="#2f2f2f"/>
+  <circle cx="100" cy="142" r="4" fill="#2f2f2f"/>
+</svg>

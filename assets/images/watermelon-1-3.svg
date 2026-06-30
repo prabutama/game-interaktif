@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Semangka pecahan satu per tiga</title>
+  <desc id="desc">Semangka bulat dibagi tiga bagian sama besar dan satu bagian ditandai.</desc>
+  <circle cx="100" cy="100" r="84" fill="#46a44e"/>
+  <circle cx="100" cy="100" r="73" fill="#f15b6c"/>
+  <path d="M100 100 L100 27 A73 73 0 0 1 163.22 136.5 Z" fill="#ff97a3"/>
+  <line x1="100" y1="100" x2="100" y2="27" stroke="#2e6f38" stroke-width="4"/>
+  <line x1="100" y1="100" x2="163.22" y2="136.5" stroke="#2e6f38" stroke-width="4"/>
+  <line x1="100" y1="100" x2="36.78" y2="136.5" stroke="#2e6f38" stroke-width="4"/>
+  <circle cx="100" cy="58" r="4" fill="#2f2f2f"/>
+  <circle cx="69" cy="118" r="4" fill="#2f2f2f"/>
+  <circle cx="132" cy="118" r="4" fill="#2f2f2f"/>
+  <circle cx="100" cy="144" r="4" fill="#2f2f2f"/>
+</svg>

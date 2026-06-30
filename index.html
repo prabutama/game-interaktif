@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petualangan Pecahan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Media Pembelajaran Interaktif</p>
+      <h1>Petualangan Pecahan</h1>
+      <p class="hero-text">
+        Yuk belajar pecahan pembilang 1 dengan langkah bertahap: baca materi,
+        lihat contoh soal, kerjakan latihan, lalu cek hasil akhir.
+      </p>
+      <div class="sound-control-row">
+        <button id="sound-toggle" class="sound-button" type="button" aria-pressed="true">Suara: On</button>
+      </div>
+      <div class="hero-illustration" aria-hidden="true">
+        <div class="planet planet-one"></div>
+        <div class="planet planet-two"></div>
+        <div class="star star-one">★</div>
+        <div class="star star-two">★</div>
+        <div class="star star-three">★</div>
+      </div>
+    </header>
+
+    <main class="card">
+      <section id="screen-material" class="screen active">
+        <div class="section-head">
+          <h2>Materi Singkat</h2>
+          <p>
+            Pecahan pembilang 1 artinya <strong>satu bagian</strong> dari beberapa bagian yang sama besar.
+            Angka di atas menunjukkan bagian yang diambil. Angka di bawah menunjukkan jumlah semua bagian.
+          </p>
+          <p>
+            Contoh: <strong>1/2</strong> berarti satu dari dua bagian, <strong>1/3</strong> berarti satu dari tiga bagian,
+            dan <strong>1/4</strong> berarti satu dari empat bagian.
+          </p>
+        </div>
+
+        <div class="visual-gallery">
+          <article class="visual-card">
+            <h3>Pizza Pecahan</h3>
+            <p>Lihat pizza yang dibagi sama besar. Bagian berwarna lebih terang menunjukkan satu bagian yang dipilih.</p>
+            <div class="visual-grid">
+              <figure class="image-card">
+                <img src="assets/images/pizza-1-2.png" alt="Pizza menunjukkan pecahan satu per dua">
+                <figcaption>1/2</figcaption>
+              </figure>
+              <figure class="image-card">
+                <img src="assets/images/pizza-1-3.png" alt="Pizza menunjukkan pecahan satu per tiga">
+                <figcaption>1/3</figcaption>
+              </figure>
+              <figure class="image-card">
+                <img src="assets/images/pizza-1-4.png" alt="Pizza menunjukkan pecahan satu per empat">
+                <figcaption>1/4</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article class="visual-card">
+            <h3>Semangka Pecahan</h3>
+            <p>Semangka juga bisa dibagi sama besar. Jika diambil satu bagian, kita bisa menuliskannya dalam bentuk pecahan.</p>
+            <div class="visual-grid">
+              <figure class="image-card">
+                <img src="assets/images/watermelon-1-2.png" alt="Semangka menunjukkan pecahan satu per dua">
+                <figcaption>1/2</figcaption>
+              </figure>
+              <figure class="image-card">
+                <img src="assets/images/watermelon-1-3.png" alt="Semangka menunjukkan pecahan satu per tiga">
+                <figcaption>1/3</figcaption>
+              </figure>
+              <figure class="image-card">
+                <img src="assets/images/watermelon-1-4.png" alt="Semangka menunjukkan pecahan satu per empat">
+                <figcaption>1/4</figcaption>
+              </figure>
+            </div>
+          </article>
+        </div>
+
+        <div class="tip-box">
+          <p><strong>Tips mudah:</strong> Jika angka bawah makin besar, ukuran satu bagiannya menjadi makin kecil.</p>
+        </div>
+
+        <div class="button-row">
+          <button id="to-example-button" class="primary-button" type="button">Lanjut ke Contoh Soal</button>
+        </div>
+      </section>
+
+      <section id="screen-example" class="screen hidden">
+        <div class="section-head">
+          <h2>Contoh Soal Terbimbing</h2>
+          <p>Kita lihat satu soal dulu, lalu kita bahas langkah menjawabnya bersama.</p>
+        </div>
+
+        <div class="example-box">
+          <p class="example-question">
+            Perhatikan gambar pizza berikut. Jika hanya <strong>1 bagian</strong> dari <strong>4 bagian sama besar</strong>
+            yang dipilih, pecahan yang tepat adalah...
+          </p>
+
+          <figure class="guided-figure">
+            <img src="assets/images/pizza-1-4.png" alt="Pizza menunjukkan satu dari empat bagian dipilih">
+            <figcaption>Pizza dibagi menjadi 4 bagian sama besar.</figcaption>
+          </figure>
+
+          <div class="guided-steps">
+            <p><strong>Langkah 1:</strong> Hitung jumlah semua bagian. Ada 4 bagian, jadi angka bawah adalah 4.</p>
+            <p><strong>Langkah 2:</strong> Hitung bagian yang dipilih. Ada 1 bagian, jadi angka atas adalah 1.</p>
+            <p><strong>Jawaban:</strong> Pecahannya adalah <strong>1/4</strong>.</p>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button id="start-quiz-button" class="primary-button" type="button">Mulai Latihan</button>
+        </div>
+      </section>
+
+      <section id="screen-quiz" class="screen hidden">
+        <div class="quiz-topbar">
+          <div class="progress-card">
+            <p class="progress-label">Progress</p>
+            <p id="progress-text" class="progress-value">Soal 1 dari 10</p>
+          </div>
+          <div class="progress-card score-card">
+            <p class="progress-label">Skor Benar</p>
+            <p id="score-text" class="progress-value">0</p>
+          </div>
+        </div>
+
+        <div class="progress-track" aria-hidden="true">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+
+        <div class="question-card">
+          <p id="question-tag" class="question-tag hidden">Soal Gambar</p>
+          <h2 id="question-text">Pertanyaan akan muncul di sini.</h2>
+          <div id="question-image-wrapper" class="question-image-wrapper hidden"></div>
+          <div id="options-container" class="options-grid"></div>
+        </div>
+
+        <div id="feedback-box" class="feedback-box hidden"></div>
+
+        <div class="button-row">
+          <button id="next-button" class="primary-button hidden" type="button">Soal Berikutnya</button>
+        </div>
+      </section>
+
+      <section id="screen-result" class="screen hidden">
+        <div class="section-head">
+          <h2>Hasil Belajar</h2>
+          <p>Latihan selesai. Lihat hasil belajarmu di bawah ini.</p>
+        </div>
+
+        <div class="result-box">
+          <p class="result-score">Skor Akhir: <span id="final-score">0</span>/10</p>
+          <p id="result-message" class="result-message">Pesan motivasi akan muncul di sini.</p>
+        </div>
+
+        <div class="button-row result-buttons">
+          <button id="retry-button" class="primary-button" type="button">Ulangi Game</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
